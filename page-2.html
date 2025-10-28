@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
+    <!-- flatpickr CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <!-- iziToast CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
     <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-DvPDDfy5.css">
   </head>
   <body>
@@ -55,5 +65,40 @@
   </div>
 </footer>
 
+    <div class="panel" role="main">
+      <div class="controls">
+        <input
+          type="text"
+          id="datetime-picker"
+          placeholder="Tarih ve saat seçin"
+          autocomplete="off"
+        />
+        <button type="button" data-start disabled>Start</button>
+      </div>
+
+      <div class="timer" aria-live="polite">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- flatpickr & iziToast JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+    <script src="./js/01-timer.js"></script>
   </body>
 </html>

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
     <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-DvPDDfy5.css">
   </head>
   <body>
@@ -55,5 +59,39 @@
   </div>
 </footer>
 
+    <div class="panel" role="main">
+      <form class="form">
+        <label>
+          Delay (ms)
+          <input
+            type="number"
+            name="delay"
+            required
+            min="0"
+            placeholder="örn: 2000"
+          />
+        </label>
+
+        <fieldset style="width: 300px">
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
+    </div>
+
+    <!-- iziToast JS -->
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+    <!-- Proje scripti -->
+    <script src="script.js"></script>
+    <script src="./js/02-snackbar.js"></script>
   </body>
 </html>
