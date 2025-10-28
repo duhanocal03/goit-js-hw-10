@@ -36,7 +36,7 @@ promise
 .then((delay) => {
 // Başarılı durum bildirimi
 iziToast.success({
-title: '✅ ',
+title: '',
 message: `Fulfilled promise in ${delay}ms`,
 position: 'topRight',
 timeout: 3000
@@ -45,7 +45,7 @@ timeout: 3000
 .catch((delay) => {
 // Başarısız durum bildirimi
 iziToast.error({
-title: '❌',
+title: '',
 message: `Rejected promise in ${delay}ms`,
 position: 'topRight',
 timeout: 3000
